@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-- Python 3.8
+- Python 3.+
 
 ## Setup Instructions
 
@@ -10,7 +10,7 @@
 2. cd squad_activity
 3. source env/bin/activate or . env/bin/activate
 4. cd parking_project
-5. Run `python __main__.py -f ./resources/inputs/input1.txt`
+5. Run `python3 __main__.py -f ./resources/inputs/input1.txt`
 
 ## Run Tests
 
@@ -18,7 +18,7 @@
 2. cd squad_activity
 3. source env/bin/activate or . env/bin/activate
 4. cd parking_project
-5. Run `python -m tests.test`
+5. Run `python3 -m tests.test`
 
 
 ## Problem Description
