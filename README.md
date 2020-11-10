@@ -27,6 +27,7 @@ We interact with the system via a file-based input system, i.e. it should accept
 ## Setup Instructions
 
 1. Clone the repository
-2. cd Squadstack
+2. cd squad_activity
 3. source env/bin/activate
-4. Run `python main.py -f ./resources/inputs/input1.txt`as input file.
+4. cd parking_project
+5. Run `python __main__.py -f ./resources/inputs/input1.txt`as input file.
