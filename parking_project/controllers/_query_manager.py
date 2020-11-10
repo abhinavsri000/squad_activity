@@ -4,9 +4,9 @@
 
 class query_manager:
 
-    # ========================
+    # ===========================
     # query -> slot_no from Age
-    # ========================
+    # ===========================
 
     def get_registration_no_from_age(self, parking_lot, age):
         registration_numbers = []
