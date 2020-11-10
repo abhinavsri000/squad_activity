@@ -13,6 +13,7 @@ def execute(parking_lot,instruction):
 
     cmd , arg = instruction.split(" ",1)
     query = query_manager()
+
     # ===============================================
     # Case for Allocating Parking with number of slots
     # ===============================================
@@ -28,9 +29,8 @@ def execute(parking_lot,instruction):
 
     elif cmd == PARK:
         regno = arg.split(' ')[0]
-        age = arg.split(' ')[2]
-        car = Car(regno,Driver(age))
-        slot_booked = parking_lot.park_vehicle(car)
+        driver_age = arg.split(' ')[2]
+        slot_booked = parking_lot.park_vehicle(regno,driver_age)
         if slot_booked == -1:
             print("Parking Full")
         else:
@@ -50,18 +50,20 @@ def execute(parking_lot,instruction):
     # Case for querying Vehicle_registration_Number by age
     # ===============================================
 
-    elif cmd == FETCH_SLOTS_USING_DRIVER_AGE:
+    elif cmd == FETCH_VEHICLE_REG_NO_FOR_AGE:
         age = int(arg)
         regnos = query.get_registration_no_from_age(parking_lot,age)
+        # regnos = parking_lot.get_registration_no_from_age(age)
         print(', '.join(regnos))
 
     # ===============================================
     # Case for querying the Slot_no by age
     # ===============================================
 
-    elif cmd == FETCH_VEHICLE_REG_NO_FOR_AGE:
+    elif cmd == FETCH_SLOTS_USING_DRIVER_AGE:
         age = int(arg)
         slotnos = query.get_slot_no_from_age(parking_lot,age)
+        # slotnos = parking_lot.get_slot_no_from_age(age)
         print(', '.join(slotnos))
 
     # ===============================================
@@ -71,6 +73,7 @@ def execute(parking_lot,instruction):
     elif cmd == FETCH_SLOTS_USING_REG_NO:
         regno = arg
         slotno = query.get_slot_no_from_regno(parking_lot,regno)
+        # slotno = parking_lot.get_slot_no_from_regno(regno)
         if slotno == -1:
             print("Not found")
         else:

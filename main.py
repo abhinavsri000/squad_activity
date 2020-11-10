@@ -6,7 +6,7 @@
 from helpers.parse_arg_helper import parse_args
 from helpers.file_io_helper import parse_file
 from controllers import _dispatcher
-from entities._parking_lot import Parking_Lot
+from entities.parking_lot import Parking_Lot
 
 def main():
 
@@ -21,9 +21,9 @@ def main():
     parking_lot = Parking_Lot()
 
     # Parsing the command line argument
-    arg = parse_args()
-    input_file_path = arg['src_file']
-
+    # arg = parse_args()
+    # input_file_path = arg['src_file']
+    input_file_path = "./resources/inputs/input1.txt"
 
     if input_file_path == None:
         print("No Input File Found")

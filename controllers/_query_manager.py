@@ -5,20 +5,20 @@
 class query_manager:
 
     # ========================
-    # query slot_no from Age
+    # query -> slot_no from Age
     # ========================
 
-    def get_registration_no_from_age(self,parking_lot, age):
+    def get_registration_no_from_age(self, parking_lot, age):
         registration_numbers = []
 
         for i in parking_lot.slots:
-            if i != -1 and i.driver.age == age:
+            if i != -1 and i.age == age:
                 registration_numbers.append(i.regno)
 
         return registration_numbers
 
     # ========================
-    # query slot_no from Reg_no
+    # query ->  slot_no from Reg_no
     # ========================
 
     def get_slot_no_from_regno(self,parking_lot, regno):
@@ -30,15 +30,14 @@ class query_manager:
         return -1
 
     # ========================
-    # query slot_no from Age
+    # query -> slots from Age
     # ========================
 
-    def get_slot_no_from_age(self,parking_lot, age):
+    def get_slot_no_from_age(self, parking_lot, age):
         slotNumbers = []
         for i in range(len(parking_lot.slots)):
             if parking_lot.slots[i] == -1:
                 continue
-            if parking_lot.slots[i].driver.age == age:
+            if parking_lot.slots[i].age == age:
                 slotNumbers.append(str(i+1))
-
         return slotNumbers
