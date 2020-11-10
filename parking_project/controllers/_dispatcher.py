@@ -33,7 +33,7 @@ def execute(parking_lot,instruction):
         driver = Driver(driver_age)
         slot_booked = parking_lot.park_vehicle(regno,driver)
         if slot_booked == -1:
-            print("Parking Full")
+            print("Parking Full.")
         else:
             print('Car with vehicle registration number “' + str(regno) + '” has been parked at slot number ' + str(slot_booked))
 
@@ -46,7 +46,8 @@ def execute(parking_lot,instruction):
         car_info = parking_lot.leave(leave_slotid)
         if car_info[0] != -1:
             print('Slot number {} vacated, the car with vehicle registration number “{}” left the space, the driver of the car was of age {}'.format(leave_slotid, car_info[0], car_info[1]))
-
+        else:
+            print('No Car in the Lot')
     # ===============================================
     # Case for querying Vehicle_registration_Number by age
     # ===============================================

@@ -14,19 +14,19 @@ def main():
         @param - File Name of the InputFile
     """
 
-
-    # Parsing the command line argument
-    arg = parse_args()
-    input_file_path = arg['src_file']
-
-     # ==================================
+    # ==================================
     # Global Parking_lot Object
     # ==================================
 
     parking_lot = Parking_Lot()
 
+    # Parsing the command line argument
+    arg = parse_args()
+    input_file_path = arg['src_file']
+
+
     if input_file_path == None:
-        print("No Input File Found.\nPlease Provide a File. Use -h for more help")
+        print("No Input File Found.\nPlease Provide a File_Path. Use -h for more help")
 
     else:
         # Dispatcher.execute is called to execute the commands one by one.
@@ -38,7 +38,7 @@ def main():
         except TypeError:
             return
         except:
-            print("Problem in File")
+            print("Invalid File")
 
 if __name__ == '__main__':
 	main()

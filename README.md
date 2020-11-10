@@ -4,6 +4,23 @@
 
 - Python 3.8
 
+## Setup Instructions
+
+1. Clone the repository
+2. cd squad_activity
+3. source env/bin/activate or . env/bin/activate
+4. cd parking_project
+5. Run `python __main__.py -f ./resources/inputs/input1.txt`
+
+## Run Tests
+
+1. Clone the repository
+2. cd squad_activity
+3. source env/bin/activate or . env/bin/activate
+4. cd parking_project
+5. Run `python -m tests.test`
+
+
 ## Description
 
 We own a parking lot that can hold up to ‘n’ cars at any given point in time. Each slot is given a number starting at one increasing with increasing distance from the entry point in steps of one. We want to create an automated ticketing system that allows our customers to use our parking lot without human intervention.
@@ -22,12 +39,3 @@ Due to government regulation, the system should provide us with the ability to f
 3. Slot numbers of all slots where cars of drivers of a particular age are parked.
 
 We interact with the system via a file-based input system, i.e. it should accept a filename as an input. The file referenced by filename will contain a set of commands separated by a newline, we need to execute the commands in order and produce output.
-
-
-## Setup Instructions
-
-1. Clone the repository
-2. cd squad_activity
-3. source env/bin/activate
-4. cd parking_project
-5. Run `python __main__.py -f ./resources/inputs/input1.txt`as input file.
