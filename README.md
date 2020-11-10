@@ -29,4 +29,4 @@ We interact with the system via a file-based input system, i.e. it should accept
 1. Clone the repository
 2. cd Squadstack
 3. source env/bin/activate
-4. Run `python main.py -f ./resources/inputs/input1.txt` in case of input as file.
+4. Run `python main.py -f ./resources/inputs/input1.txt`as input file.

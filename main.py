@@ -18,7 +18,7 @@ def main():
     # Global Parking_lot Object
     # ==================================
 
-    global parking_lot = Parking_Lot()
+    parking_lot = Parking_Lot()
 
     # Parsing the command line argument
     arg = parse_args()

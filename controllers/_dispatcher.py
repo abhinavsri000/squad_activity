@@ -5,14 +5,14 @@ Utility to dispatch the commands
 from globals.global_mappings import *
 from entities.car import Car
 from entities.driver import Driver
-from controllers._query_manger import *
+from controllers._query_manager import query_manager
 
 def execute(parking_lot,instruction):
 
     # Split commands and @params from instruction
 
     cmd , arg = instruction.split(" ",1)
-
+    query = query_manager()
     # ===============================================
     # Case for Allocating Parking with number of slots
     # ===============================================
@@ -52,7 +52,7 @@ def execute(parking_lot,instruction):
 
     elif cmd == FETCH_SLOTS_USING_DRIVER_AGE:
         age = int(arg)
-        regnos = get_registration_no_from_age(parking_lot,age)
+        regnos = query.get_registration_no_from_age(parking_lot,age)
         print(', '.join(regnos))
 
     # ===============================================
@@ -61,7 +61,7 @@ def execute(parking_lot,instruction):
 
     elif cmd == FETCH_VEHICLE_REG_NO_FOR_AGE:
         age = int(arg)
-        slotnos = get_slot_no_from_age(parking_lot,age)
+        slotnos = query.get_slot_no_from_age(parking_lot,age)
         print(', '.join(slotnos))
 
     # ===============================================
@@ -70,7 +70,7 @@ def execute(parking_lot,instruction):
 
     elif cmd == FETCH_SLOTS_USING_REG_NO:
         regno = arg
-        slotno = get_slot_no_from_regno(parking_lot,regno)
+        slotno = query.get_slot_no_from_regno(parking_lot,regno)
         if slotno == -1:
             print("Not found")
         else:
