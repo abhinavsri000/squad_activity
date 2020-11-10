@@ -12,7 +12,7 @@ class query_manager:
         registration_numbers = []
 
         for i in parking_lot.slots:
-            if i != -1 and i.age == age:
+            if i != -1 and i.driver.age == age :
                 registration_numbers.append(i.regno)
 
         return registration_numbers
@@ -38,6 +38,6 @@ class query_manager:
         for i in range(len(parking_lot.slots)):
             if parking_lot.slots[i] == -1:
                 continue
-            if parking_lot.slots[i].age == age:
+            if parking_lot.slots[i].driver.age == age:
                 slotNumbers.append(str(i+1))
         return slotNumbers

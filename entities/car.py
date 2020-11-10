@@ -1,7 +1,7 @@
 from ._vehicle import Vehicle
 
 class Car(Vehicle):
-    def __init__(self, regno, age, size = 1):
+    def __init__(self, regno, driver, size = 1):
         self.regno = regno
-        self.age = age
+        self.driver = driver
         self.size = size

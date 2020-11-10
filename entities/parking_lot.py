@@ -65,11 +65,11 @@ class Parking_Lot:
     # Method to Park Vehicle
     # ========================
 
-    def park_vehicle(self, regno, age , size=1):
+    def park_vehicle(self, regno, driver , size=1):
         if self.total_occupied_slots < self.capacity:
             id = self.__get_vacant_slot()
             size = 1
-            self.slots[id] = Car(regno,int(age))
+            self.slots[id] = Car(regno,driver)
             self.slot_id = self.slot_id + 1
             self.total_occupied_slots = self.total_occupied_slots + size
             return id + 1
@@ -84,43 +84,9 @@ class Parking_Lot:
     def leave(self, slot_id, size=1):
         if self.total_occupied_slots > 0 and self.slots[slot_id - 1] != -1:
             regno = self.slots[slot_id - 1].regno
-            age = self.slots[slot_id - 1].age
+            age = self.slots[slot_id - 1].driver.age
             self.slots[slot_id - 1] = -1
             self.total_occupied_slots = self.total_occupied_slots - size
             return (regno, age)
         else:
             return (-1, -1)
-
-    """ def get_registration_no_from_age(self, age):
-        registration_numbers = []
-
-        for i in self.slots:
-            if i != -1 and i.age == age:
-                registration_numbers.append(i.regno)
-
-        return registration_numbers
-
-    # ========================
-    # query ->  slot_no from Reg_no
-    # ========================
-
-    def get_slot_no_from_regno(self,regno):
-
-        for i in range(len(self.slots)):
-            if self.slots[i].regno == regno:
-                return i + 1
-
-        return -1
-
-    # ========================
-    # query -> slots from Age
-    # ========================
-
-    def get_slot_no_from_age(self, age):
-        slotNumbers = []
-        for i in range(len(self.slots)):
-            if self.slots[i] == -1:
-                continue
-            if self.slots[i].age == age:
-                slotNumbers.append(str(i+1))
-        return slotNumbers """

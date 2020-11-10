@@ -30,7 +30,8 @@ def execute(parking_lot,instruction):
     elif cmd == PARK:
         regno = arg.split(' ')[0]
         driver_age = arg.split(' ')[2]
-        slot_booked = parking_lot.park_vehicle(regno,driver_age)
+        driver = Driver(driver_age)
+        slot_booked = parking_lot.park_vehicle(regno,driver)
         if slot_booked == -1:
             print("Parking Full")
         else:
