@@ -1,4 +1,4 @@
-## Parking Allotment
+## Parking System
 
 ## Dependencies
 
@@ -6,7 +6,7 @@
 
 ## Setup Instructions
 
-1. Clone the repository
+1. Clone the repository : $ git clone https://github.com/abhinavsri000/squad_activity.git
 2. cd squad_activity
 3. source env/bin/activate or . env/bin/activate
 4. cd parking_project
@@ -14,14 +14,14 @@
 
 ## Run Tests
 
-1. Clone the repository
+1. Clone the repository : $ git clone https://github.com/abhinavsri000/squad_activity.git
 2. cd squad_activity
 3. source env/bin/activate or . env/bin/activate
 4. cd parking_project
 5. Run `python -m tests.test`
 
 
-## Description
+## Problem Description
 
 We own a parking lot that can hold up to ‘n’ cars at any given point in time. Each slot is given a number starting at one increasing with increasing distance from the entry point in steps of one. We want to create an automated ticketing system that allows our customers to use our parking lot without human intervention.
 
