@@ -81,11 +81,14 @@ class Parking_Lot:
     # ========================
 
     def leave(self, slot_id, size=1):
-        if self.total_occupied_slots > 0 and self.slots[slot_id - 1] != -1:
-            regno = self.slots[slot_id - 1].regno
-            age = self.slots[slot_id - 1].driver.age
-            self.slots[slot_id - 1] = -1
-            self.total_occupied_slots = self.total_occupied_slots - size
-            return (regno, age)
-        else:
-            return (-1, -1)
+        try:
+            if slot_id <= len(self.slots)-1 and self.total_occupied_slots > 0 and self.slots[slot_id - 1] != -1 :
+                regno = self.slots[slot_id - 1].regno
+                age = self.slots[slot_id - 1].driver.age
+                self.slots[slot_id - 1] = -1
+                self.total_occupied_slots = self.total_occupied_slots - size
+                return (regno, age)
+            else:
+                return (-1, -1)
+        except:
+            return 0

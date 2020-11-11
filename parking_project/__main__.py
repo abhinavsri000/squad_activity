@@ -37,8 +37,7 @@ def main():
 
         except TypeError:
             return
-        except:
-            print("Invalid File")
+
 
 if __name__ == '__main__':
 	main()

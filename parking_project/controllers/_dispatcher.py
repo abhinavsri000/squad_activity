@@ -34,6 +34,8 @@ def execute(parking_lot,instruction):
         slot_booked = parking_lot.park_vehicle(regno,driver)
         if slot_booked == -1:
             print("Parking Full.")
+        elif slot_booked == 0:
+            print("Error in Parking the Car")
         else:
             print('Car with vehicle registration number “' + str(regno) + '” has been parked at slot number ' + str(slot_booked))
 
