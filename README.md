@@ -51,7 +51,7 @@ Make sure python 3.+ is installed and is added to the PATH. The project is not b
 4. $ cd parking_project
 5. Run `python3 __main__.py -f <absolute or relative input file path>`
 
-examples :
+examples :<br/>
     Run `python3 __main__.py -f ./resources/inputs/sample_input.txt` or<br/>
     Run `python3 __main__.py -f ./sample_input.txt` or<br/>
     Run `python3 __main__.py -f ../sample_input.txt` or<br/>
