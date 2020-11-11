@@ -1,24 +1,62 @@
 ## Parking System
 
+## Project Structure
+
+[] parking_project directory is the Project direectory.
+[] -parking_project
+        - controllers
+            [] _dispatcher.py
+            [] _query_manager.py
+        - entities
+            [] _vehicle.py
+            [] car.py
+            [] driver.py
+            [] parking_lot.py
+        - globals
+            [] global_mappings.py
+        - helpers
+            [] file_io_helper.py
+            [] parse_arg_helper.py
+        - resources
+            [] inputs
+                []input1.txt
+                []input2.txt
+                []input3.txt
+                []sample_input.txt
+        - tests
+            [] test_resources
+                []inputs
+                    []input0.txt
+                    []input1.txt
+                    []input2.txt
+                    []sample_input.txt
+            test.py
+        __main__.py
+
 ## Dependencies
 
-- Python 3.8
+- Python 3.+
 
 ## Setup Instructions
 
 1. Clone the repository : $ git clone https://github.com/abhinavsri000/squad_activity.git
-2. cd squad_activity
-3. source env/bin/activate or . env/bin/activate
-4. cd parking_project
-5. Run `python __main__.py -f ./resources/inputs/input1.txt`
+2. $ cd squad_activity
+3. Activate the virtual env : $ source env/bin/activate or . env/bin/activate
+4. $ cd parking_project
+5. Run `python3 __main__.py -f <absolute or relative input file path>`
+
+examples :
+    [] Run `python3 __main__.py -f ./resources/inputs/sample_input.txt` or
+    [] Run `python3 __main__.py -f ./sample_input.txt` or
+    [] Run `python3 __main__.py -f ../sample_input.txt` or
+
 
 ## Run Tests
-
 1. Clone the repository : $ git clone https://github.com/abhinavsri000/squad_activity.git
-2. cd squad_activity
-3. source env/bin/activate or . env/bin/activate
-4. cd parking_project
-5. Run `python -m tests.test`
+2. $ cd squad_activity
+3. Activate the virtual env : $ source env/bin/activate or . env/bin/activate
+4. $ cd parking_project
+5. Run `python3 -m tests.test`
 
 
 ## Problem Description
