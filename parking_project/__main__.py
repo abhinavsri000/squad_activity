@@ -8,6 +8,7 @@ from helpers.file_io_helper import parse_file
 from controllers import _dispatcher
 from entities.parking_lot import Parking_Lot
 
+
 def main():
 
     """ The function takes command-line argument.
@@ -40,4 +41,4 @@ def main():
 
 
 if __name__ == '__main__':
-	main()
+    main()
