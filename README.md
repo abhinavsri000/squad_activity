@@ -1,4 +1,8 @@
 ## Parking System
+## Dependencies
+
+- Python 3.+ (written in 3.8.5)
+Make sure python 3.+ is installed and is added to the PATH. The project is not backward compatible to python 2.+.
 
 ## Project Structure
 
@@ -38,9 +42,6 @@
 ├── ...<br/>
 ├── ...<br/>
 
-## Dependencies
-
-- Python 3.+
 
 ## Setup Instructions
 
