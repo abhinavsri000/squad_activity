@@ -4,39 +4,39 @@
 
 [] parking_project directory is the Project directory.
 
-├── ...
-├── ...
-├── parking_project
-│   └── controllers
-│   │   ├── _dispatcher.py
-│   │   ├── _query_manager.py
-│   └── entities
-│   │    ├── _vehicle.py
-│   │    ├── car.py
-│   │    ├── driver.py
-│   │    ├── parking_lot.py
-│   └── globals
-│   │    ├── gloabal_mappings.py
-│   └── helpers
-│   │    ├── file_io_helper.py
-│   │    ├── parse_arg_helper.py
-│   └── resources
-│   │    ├── inputs
-│   │    |   ├── input1.txt
-│   │    |   ├── input2.txt
-│   │    |   ├── input3.txt
-│   │    |   ├── sample_input.txt
-│   └── tests
-│   │    ├── test_resources
-│   │    |   ├── input
-│   │    |   |   ├── input0.txt
-│   │    |   |   ├── input1.txt
-│   │    |   |   ├── input2.txt
-│   │    ├──test.py
-│   └── __main__.py
-│   └── sample_input.txt
-├── ...
-├── ...
+├── ...<br/>
+├── ...<br/>
+├── parking_project<br/>
+│   └── controllers<br/>
+│   │   ├── _dispatcher.py<br/>
+│   │   ├── _query_manager.py<br/>
+│   └── entities<br/>
+│   │    ├── _vehicle.py<br/>
+│   │    ├── car.py<br/>
+│   │    ├── driver.py<br/>
+│   │    ├── parking_lot.py<br/>
+│   └── globals<br/>
+│   │    ├── gloabal_mappings.py<br/>
+│   └── helpers<br/>
+│   │    ├── file_io_helper.py<br/>
+│   │    ├── parse_arg_helper.py<br/>
+│   └── resources<br/>
+│   │    ├── inputs<br/>
+│   │    |   ├── input1.txt<br/>
+│   │    |   ├── input2.txt<br/>
+│   │    |   ├── input3.txt<br/>
+│   │    |   ├── sample_input.txt<br/>
+│   └── tests<br/>
+│   │    ├── test_resources<br/>
+│   │    |   ├── input<br/>
+│   │    |   |   ├── input0.txt<br/>
+│   │    |   |   ├── input1.txt<br/>
+│   │    |   |   ├── input2.txt<br/>
+│   │    ├──test.py<br/>
+│   └── __main__.py<br/>
+│   └── sample_input.txt<br/>
+├── ...<br/>
+├── ...<br/>
 
 ## Dependencies
 
