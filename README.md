@@ -62,7 +62,8 @@ examples :<br/>
 2. $ cd squad_activity
 3. Activate the virtual env : $ source env/bin/activate or . env/bin/activate
 4. $ cd parking_project
-5. Run `python3 -m tests.test`
+5. Run `python3 -m tests.test_helpers` or
+Run `python3 -m tests.test_query_manager`
 
 
 ## Problem Description
