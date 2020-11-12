@@ -10,13 +10,13 @@ class test_helpers(unittest.TestCase):
         pass
 
     def test_case_no_input_file(self):
-        self.assertEqual(parse_file(),None)
+        return self.assertEqual(parse_file(),None)
 
     def test_case_empty_input_file(self):
-        self.assertEqual(parse_file(PATH+'input0.txt'), None)
+        return self.assertEqual(parse_file(PATH+'input0.txt'), None)
 
     def test_case_valid_input_file(self):
-        self.assertEqual(parse_file(PATH+'input1.txt'), ['Create_parking_lot 6',
+        return self.assertEqual(parse_file(PATH+'input1.txt'), ['Create_parking_lot 6',
         'Park KA-01-HH-1234 driver_age 21',
         'Park PB-01-HH-1234 driver_age 21',
         'Slot_numbers_for_driver_of_age 21',
